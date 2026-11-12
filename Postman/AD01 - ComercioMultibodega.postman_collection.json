@@ -1,0 +1,313 @@
+{
+  "info": {
+    "_postman_id": "1617be66-82a4-4fbc-89fd-90f0a37db368",
+    "name": "AD01 - ComercioMultibodega",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57528385",
+    "_collection_link": "https://go.postman.co/collection/57528385-1617be66-82a4-4fbc-89fd-90f0a37db368?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET Clientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7034/api/Cliente",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "Cliente"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Cliente",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"nombres\": \"Cliente Postman\",\r\n  \"cedula\": \"PRUEBA-001\",\r\n  \"correo\": \"postman@example.com\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7034/api/Cliente",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "Cliente"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Cliente por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7034/api/Cliente/2",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "Cliente",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT Cliente",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"idCliente\": 2,\r\n  \"nombres\": \"Cliente Actualizado\",\r\n  \"cedula\": \"PRUEBA-001\",\r\n  \"correo\": \"actualizado@example.com\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7034/api/Cliente/2",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "Cliente",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE Cliente",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Pedido",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"idCliente\": 1\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7034/api/Pedido",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "Pedido"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST DetallePedido",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"idPedido\": 1,\r\n  \"idProducto\": 1,\r\n  \"cantidad\": 2,\r\n  \"precioUnitario\": 850.00\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7034/api/DetallePedido",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "DetallePedido"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST agregarCliente",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST DetallePedido",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"idPedido\": 1,\r\n  \"idProducto\": 1,\r\n  \"cantidad\": 2,\r\n  \"precioUnitario\": 850.00\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7034/api/DetallePedido",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "DetallePedido"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Pedido por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7034/api/Pedido/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "Pedido",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT DetallePedido",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"idDetalle\": 1,\r\n  \"idPedido\": 1,\r\n  \"idProducto\": 1,\r\n  \"cantidad\": 1,\r\n  \"precioUnitario\": 850.00\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7034/api/DetallePedido/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "DetallePedido",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE DetallePedido",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7034/api/DetallePedido/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "DetallePedido",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET DetallePedido No Encontrado",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7034/api/DetallePedido/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7034",
+          "path": [
+            "api",
+            "DetallePedido",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
